@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# glocupdate - fast location of files by grepping
+# by Liam Marshall
+#
+# inspired by Julia Evans - http://jvns.ca/blog/2015/03/05/how-the-locate-command-works-and-lets-rewrite-it-in-one-minute/
+
+mkdir -p /usr/local/share/glocate
+
+echo "$(tput setaf 2)Writing glocate database$(tput sgr0)"
+find / > /usr/local/share/glocate/glocate.db
+echo "$(tput setaf 2)Done writing database$(tput sgr0)"
