@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# glocupdate - fast location of files by grepping
+# by Liam Marshall
+#
+# inspired by Julia Evans - http://jvns.ca/blog/2015/03/05/how-the-locate-command-works-and-lets-rewrite-it-in-one-minute/
+
+grep -- "$@" /usr/local/share/glocate/glocate.db
