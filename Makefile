@@ -1,3 +1,3 @@
 install:
-	install glocate /usr/bin
-	install glocupdate /usr/bin
+	install glocate /usr/local/bin
+	install glocupdate /usr/local/bin
